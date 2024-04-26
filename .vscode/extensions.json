@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "wix.vscode-import-cost",
+    "oderwat.indent-rainbow",
+    "ms-ceintl.vscode-language-pack-ja",
+    "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors",
+    "stylelint.vscode-stylelint",
+    "mattpocock.ts-error-translator",
+    "Vue.volar"
+  ]
+}
