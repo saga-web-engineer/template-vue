@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { storeToRefs } from 'pinia';
 
 import { useCounterStore } from '@/stores/counter';
 
 const counterStore = useCounterStore();
-const count = computed(() => counterStore.count);
-const doubleCount = computed(() => counterStore.doubleCount);
-const increment = () => counterStore.increment();
-const reset = () => counterStore.reset();
+const { count, doubleCount } = storeToRefs(counterStore);
+const { increment, $reset } = counterStore;
 </script>
 
 <template>
@@ -16,10 +14,8 @@ const reset = () => counterStore.reset();
       <p>カウント：{{ count }}</p>
       <p>↑の2倍した数値：{{ doubleCount }}</p>
     </div>
-    <button class="button" type="button" @click="increment">
-      カウントアップ
-    </button>
-    <button class="button" type="button" @click="reset">リセット</button>
+    <button class="button" type="button" @click="increment">カウントアップ</button>
+    <button class="button" type="button" @click="$reset">リセット</button>
   </div>
 </template>
 
