@@ -22,9 +22,9 @@ const navList: NavList[] = [
   <nav>
     <ul class="list">
       <li v-for="item in navList" :key="item.title">
-        <RouterLink :to="{ name: item.view }" class="link">{{
-          item.title
-        }}</RouterLink>
+        <RouterLink :to="{ name: item.view }" class="link">
+          {{ item.title }}
+        </RouterLink>
       </li>
     </ul>
   </nav>
