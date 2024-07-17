@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-inline-size: 0;
 }
 
 :where(
@@ -49,10 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 ul:where([class]),
 ol:where([class]) {
   list-style-type: '';
-}
-
-main {
-	overflow-x: hidden;
 }
 
 summary {

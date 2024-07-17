@@ -41,6 +41,7 @@ html {
 }
 
 body {
+  overflow-x: clip;
   font-family: var(--font-gothic);
   font-size: clamp(rem(14px), rem(10px) + 1.04vw, rem(18px));
   font-weight: 400;
