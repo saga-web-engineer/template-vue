@@ -13,7 +13,7 @@ import Header from '@/components/Header.vue';
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
