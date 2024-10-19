@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import Heading from '@/components/Heading.vue';
 import MetaData from '@/components/MetaData.vue';
+import Wrapper from '@/components/Wrapper.vue';
 import { SITE_NAME, SITE_URL } from '@/utils/siteSetting';
+import AboutCards from '@/views/about/components/AboutCards.vue';
 
 const pageTitle = 'About';
 const pageDescription = 'Vueでちょっとコード書くときのテンプレートの下層ページ';
@@ -17,6 +19,7 @@ const pageDirectory = 'about';
   <Wrapper>
     <section>
       <Heading ja="私たちについて" en="about" />
+      <AboutCards />
     </section>
   </Wrapper>
 </template>
