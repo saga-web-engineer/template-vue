@@ -14,8 +14,8 @@
     "format:all": "run-p lint:css lint:js format"
   },
   "volta": {
-    "node": "20.10.0",
-    "npm": "10.2.3"
+    "node": "22.11.0",
+    "npm": "10.9.0"
   },
   "dependencies": {
     "@unhead/vue": "^1.11.10",
