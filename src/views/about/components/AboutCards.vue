@@ -27,7 +27,7 @@ onMounted(async () => {
   <div v-if="todos.length">
     <ul class="list">
       <li v-for="todo in todos" :key="todo.id">
-        <a :href="todo.url" target="_blank" rel="noopener noreferrer">
+        <a :href="todo.url" target="_blank" rel="noreferrer">
           <img class="img" :src="todo.thumbnailUrl" alt="" width="" height="" />
           <h3 class="title">{{ todo.title }}</h3>
         </a>

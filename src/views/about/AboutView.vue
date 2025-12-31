@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MetaData from '@/components/MetaData.vue';
-import { SITE_NAME, SITE_URL } from '@/utils/siteSetting';
+import { SITE_NAME, SITE_URL } from '@/utils/siteConfig';
 import AboutCards from '@/views/about/components/AboutCards.vue';
 
 const pageTitle = 'About';

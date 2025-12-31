@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ThemeToggle from '@/components/ThemeToggle.vue';
-import { SITE_NAME } from '@/utils/siteSetting';
+import { SITE_NAME } from '@/utils/siteConfig';
 import Menubar from 'primevue/menubar';
 import { useRouter } from 'vue-router';
 
