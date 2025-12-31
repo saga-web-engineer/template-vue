@@ -2,17 +2,20 @@
 import ThemeToggle from '@/components/ThemeToggle.vue';
 import { SITE_NAME } from '@/utils/siteSetting';
 import Menubar from 'primevue/menubar';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const items = [
   {
     label: 'Top',
     icon: 'pi pi-fw pi-home',
-    to: '/',
+    command: () => router.push('/'),
   },
   {
     label: 'About',
     icon: 'pi pi-fw pi-star',
-    to: '/about',
+    command: () => router.push('/about'),
   },
 ];
 </script>
