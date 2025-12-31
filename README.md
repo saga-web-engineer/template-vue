@@ -1,12 +1,10 @@
 # Vueテンプレート
 
-create vueで作ったプロジェクトを使いやすいようにカスタマイズしたもの。
-
 ## Version
 
 Voltaで管理しています。
-- Node 22.11.0
-- npm 10.9.0
+- Node 24.12.0
+- npm 11.6.2
 
 ## start
 1.  **install**  
@@ -28,8 +26,3 @@ Voltaで管理しています。
     ```
     npm run build
     ```
-
-## format
-```
-npm run format:all
-```

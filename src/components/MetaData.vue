@@ -7,19 +7,19 @@ interface Props {
   url: string;
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 </script>
 
 <template>
   <Head>
-    <title>{{ props.title }}</title>
-    <meta name="title" :content="props.title" />
-    <meta name="description" :content="props.description" />
-    <meta property="og:url" :content="props.url" />
-    <meta property="og:title" :content="props.title" />
-    <meta property="og:description" :content="props.description" />
-    <meta property="twitter:url" :content="props.url" />
-    <meta property="twitter:title" :content="props.title" />
-    <meta property="twitter:description" :content="props.description" />
+    <title>{{ title }}</title>
+    <meta name="title" :content="title" />
+    <meta name="description" :content="description" />
+    <meta property="og:url" :content="url" />
+    <meta property="og:title" :content="title" />
+    <meta property="og:description" :content="description" />
+    <meta property="twitter:url" :content="url" />
+    <meta property="twitter:title" :content="title" />
+    <meta property="twitter:description" :content="description" />
   </Head>
 </template>

@@ -1,0 +1,9 @@
+@import '@s.a.g.a/reset-css' layer(reset);
+
+@layer reset, base, primevue;
+
+@layer base {
+  body {
+    padding: 1%;
+  }
+}

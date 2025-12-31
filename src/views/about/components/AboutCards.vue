@@ -39,7 +39,7 @@ onMounted(async () => {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

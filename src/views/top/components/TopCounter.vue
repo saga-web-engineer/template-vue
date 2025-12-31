@@ -1,46 +1,23 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
+import Button from 'primevue/button';
+import Panel from 'primevue/panel';
 
 import { useCounterStore } from '@/stores/counter';
 
 const counterStore = useCounterStore();
 const { count, doubleCount } = storeToRefs(counterStore);
-const { increment, $reset } = counterStore;
+const { increment, reset } = counterStore;
 </script>
 
 <template>
-  <div class="counter">
+  <div class="counter"></div>
+  <Panel header="カウンター">
     <div>
       <p>カウント：{{ count }}</p>
       <p>↑の2倍した数値：{{ doubleCount }}</p>
     </div>
-    <button class="button" type="button" @click="increment">カウントアップ</button>
-    <button class="button" type="button" @click="$reset">リセット</button>
-  </div>
+    <Button label="カウントアップ" @click="increment" />
+    <Button label="リセット" @click="reset" />
+  </Panel>
 </template>
-
-<style lang="scss" scoped>
-@use '@/styles/tool/' as *;
-
-.counter {
-  display: grid;
-  gap: 1em;
-  width: fit-content;
-  margin: 2em auto;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5em 1em;
-  color: var(--white-color-primary);
-  background-color: var(--green-color-primary);
-  border-radius: 4px;
-  transition: opacity var(--duration-primary) var(--easing-hover);
-
-  @include hover {
-    opacity: 0.6;
-  }
-}
-</style>

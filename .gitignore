@@ -13,7 +13,6 @@ dist
 dist-ssr
 coverage
 *.local
-.cache/
 
 # Editor directories and files
 .vscode/*
@@ -27,9 +26,11 @@ coverage
 
 *.tsbuildinfo
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
