@@ -21,7 +21,7 @@ const items = [
 </script>
 
 <template>
-  <header class="header">
+  <header class="top-0 sticky">
     <Menubar :model="items">
       <template #start>
         <h1>{{ SITE_NAME }}</h1>
@@ -32,10 +32,3 @@ const items = [
     </Menubar>
   </header>
 </template>
-
-<style scoped>
-.header {
-  position: sticky;
-  top: 0;
-}
-</style>

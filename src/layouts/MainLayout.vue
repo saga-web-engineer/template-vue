@@ -3,8 +3,10 @@ import AppHeader from '@/components/AppHeader.vue';
 </script>
 
 <template>
-  <AppHeader />
-  <main>
-    <slot />
-  </main>
+  <div class="p-4">
+    <AppHeader />
+    <main>
+      <slot />
+    </main>
+  </div>
 </template>

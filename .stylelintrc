@@ -1,5 +1,0 @@
-{
-  "extends": ["stylelint-config-recess-order", "stylelint-config-standard-vue"],
-  "ignoreFiles": ["**/node_modules/**"],
-  "rules": {}
-}

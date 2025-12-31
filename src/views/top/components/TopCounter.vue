@@ -17,7 +17,7 @@ const { increment, reset } = counterStore;
       <p>カウント：{{ count }}</p>
       <p>↑の2倍した数値：{{ doubleCount }}</p>
     </div>
-    <Button label="カウントアップ" @click="increment" />
-    <Button label="リセット" @click="reset" />
+    <Button label="カウントアップ" @click="increment" size="small" />
+    <Button label="リセット" @click="reset" size="small" class="ml-4" />
   </Panel>
 </template>

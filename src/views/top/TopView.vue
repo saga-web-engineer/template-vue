@@ -8,13 +8,6 @@ const pageDescription = 'Vueでちょっとコード書くときのテンプレ�
 
 <template>
   <MetaData :title="SITE_NAME" :description="pageDescription" :url="SITE_URL" />
-  <section>
-    <TopCounter />
-  </section>
-</template>
 
-<style scoped>
-section {
-  padding-block: min(16.67vw, 100px);
-}
-</style>
+  <TopCounter />
+</template>

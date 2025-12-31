@@ -22,6 +22,10 @@ app
       ripple: true,
       options: {
         darkModeSelector: '.my-app-dark',
+        cssLayer: {
+          name: 'primevue',
+          order: 'theme, base, primevue',
+        },
       },
     },
   });

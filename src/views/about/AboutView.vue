@@ -14,7 +14,6 @@ const pageDirectory = 'about';
     :description="pageDescription"
     :url="`${SITE_URL}/${pageDirectory}/`"
   />
-  <section>
-    <AboutCards />
-  </section>
+
+  <AboutCards />
 </template>
